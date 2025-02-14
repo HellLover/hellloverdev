@@ -35,5 +35,6 @@ export const projects = [
 
 export const socials = {
     github: "https://github.com/HellLover",
-    discord: "https://discord.gg/TYhSGhWGvm"
+    discord: "https://discord.gg/TYhSGhWGvm",
+    linkedin: "https://www.linkedin.com/in/samvel-kuyumjyan-5465782a6/"
 }

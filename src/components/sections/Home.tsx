@@ -15,14 +15,14 @@ const Home = () => {
             <div className='w-full mx-auto flex flex-row space-x-2 justify-center items-center'>
                 <Button variant="primary">
                     <a
-                        href="#"
+                        href="#contact"
                     >
                         Hire me
                     </a>
                 </Button>
                 <Button variant="outline">
                     <a
-                        href="#"
+                        href="#projects"
                     >
                         Projects
                     </a>

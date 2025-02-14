@@ -1,6 +1,6 @@
 import React from 'react';
 import sugar from 'sugar';
-import { AiFillDiscord, AiFillGithub } from "react-icons/ai";
+import { AiFillDiscord, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { socials } from '../../types/resources';
 
 const Footer: React.FC = () => {
@@ -18,8 +18,11 @@ const Footer: React.FC = () => {
                     <a href={socials.github} target='_blank' rel='noreferrer' className='transform hover:text-violet-200'>
                         <AiFillGithub size={24} />
                     </a>
-                    <a href={socials.discord} target='_blank' rel='noreferrer' className='text-violet-400 transform hover:text-violet-500'>
+                    <a href={socials.discord} target='_blank' rel='noreferrer' className='transform hover:text-violet-200'>
                         <AiFillDiscord size={24} />
+                    </a>
+                    <a href={socials.linkedin} target='_blank' rel='noreferrer' className='transform hover:text-violet-200'>
+                        <AiFillLinkedin size={24} />
                     </a>
                 </div>
             </div>
