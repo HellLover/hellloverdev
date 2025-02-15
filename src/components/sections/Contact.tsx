@@ -25,10 +25,10 @@ const Contact = () => {
 
         emailjs
             .sendForm(
-                process.env.EMAIL_SERVICE_ID,
-                process.env.EMAIL_TEMPLATE_ID,
+                import.meta.env.VITE_EMAIL_SERVICE_ID,
+                import.meta.env.VITE_EMAIL_TEMPLATE_ID,
                 e.target,
-                process.env.EMAIL_PUBLIC_KEY
+                import.meta.env.VITE_EMAIL_PUBLIC_KEY
             )
             .then(() => {
                 setStatus({ 
