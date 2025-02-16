@@ -6,7 +6,7 @@ import Toast from "../ui/Toast";
 
 type Status = {
     type: "error" | "success",
-    message: string;
+    message: null | string;
 }
 
 const Contact = () => {
@@ -17,7 +17,7 @@ const Contact = () => {
     });
     const [status, setStatus] = useState<Status>({ 
         type: "success", 
-        message: "" 
+        message: null 
     });
     
     const handleSubmit = (e: any) => {
@@ -25,10 +25,10 @@ const Contact = () => {
 
         emailjs
             .sendForm(
-                import.meta.env.EMAIL_SERVICE_ID,
-                import.meta.env.EMAIL_TEMPLATE_ID,
+                import.meta.env.VITE_EMAIL_SERVICE_ID,
+                import.meta.env.VITE_EMAIL_TEMPLATE_ID,
                 e.target,
-                import.meta.env.EMAIL_PUBLIC_KEY
+                import.meta.env.VITE_EMAIL_PUBLIC_KEY
             )
             .then(() => {
                 setStatus({ 
@@ -109,7 +109,7 @@ const Contact = () => {
             </RevealOnScroll>
 
             
-            {status.message !== "" && (
+            {status.message && (
                     <Toast type={status.type} message={status.message} duration={5000} />
             )}
         </Hero>

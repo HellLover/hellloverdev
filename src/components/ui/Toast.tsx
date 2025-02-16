@@ -25,7 +25,7 @@ const Toast: React.FC<ToastProps> = ({ type, message, duration = 3000 }) => {
             }`}
             style={{ transitionDuration: '300ms' }}
         >
-            {message}
+            {type == "success" ? "✔" : "❌"} {message}
         </div>
     );
 };
