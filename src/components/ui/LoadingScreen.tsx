@@ -6,7 +6,7 @@ type Props = {
 
 export const LoadingScreen: FC<Props> = ({ onComplete }) => {
   const [text, setText] = useState("");
-  const fullText = "<HellLover />";
+  const fullText = "<Kuyumjyan />";
 
   useEffect(() => {
     let index = 0;
