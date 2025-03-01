@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
             <div className="text-center py-4">
                 <p className='mb-2'>
                     &copy; 2025 | Made by
-                     <span className='text-violet-500'> HellLover</span>
+                     <span className='text-violet-500'> Kuyumjyan</span>
                 </p>
                 <p className='text-sm'>Last built at {sugar.Date.format(new Date())}</p>
                 <div className='flex row gap-2 content-center justify-center mt-2'>
