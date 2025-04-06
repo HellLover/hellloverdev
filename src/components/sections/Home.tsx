@@ -19,12 +19,11 @@ const Home = () => {
                 >
                         Contacts
                 </Button>
-                <Button variant="outline">
-                    <a
-                        href="#projects"
-                    >
+                <Button 
+                    variant="outline"
+                    onClick={() => window.scrollTo({ top: document.getElementById("projects")?.offsetTop, behavior: "smooth" })}
+                >
                         Projects
-                    </a>
                 </Button>
             </div>
         </RevealOnScroll>

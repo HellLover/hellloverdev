@@ -1,3 +1,6 @@
+import { socials } from "../../types/resources";
+import { AiFillDiscord, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+
 const Navbar = () => {
     return (
         <nav className="sticky top-0 bg-gray-900 p-4 z-50">
@@ -5,7 +8,17 @@ const Navbar = () => {
                 <div className='ml-4 text-white font-bold text-xl pointer-events-none'>
                     kuyumjyan<span className='text-blue-600'>dev</span>
                 </div>
-                <a href="#contact" className="text-gray-300 font-bold hover:text-blue-600 duration-300 text-md mr-6 border-1 rounded-full p-[4px_8px]">Contact</a>
+                <div className='flex row gap-2 content-center justify-center mr-5'>
+                    <a href={socials.github} target='_blank' rel='noreferrer' className='transform hover:text-violet-200'>
+                        <AiFillGithub size={26} />
+                    </a>
+                    <a href={socials.discord} target='_blank' rel='noreferrer' className='transform hover:text-violet-200'>
+                        <AiFillDiscord size={26} />
+                    </a>
+                    <a href={socials.linkedin} target='_blank' rel='noreferrer' className='transform hover:text-violet-200'>
+                        <AiFillLinkedin size={26} />
+                    </a>
+                </div>
             </div>
         </nav>
     );
