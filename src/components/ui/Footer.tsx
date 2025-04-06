@@ -5,7 +5,7 @@ import { socials } from '../../types/resources';
 
 const Footer: React.FC = () => {
     return (
-        <footer>
+        <footer id='footer'>
             <hr />
 
             <div className="text-center py-4">

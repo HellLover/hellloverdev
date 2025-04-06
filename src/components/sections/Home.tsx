@@ -13,12 +13,11 @@ const Home = () => {
                 Mid-level full-stack web developer specializing in Next.js and TypeScript. Passionate about building scalable web applications, optimizing user experiences, and developing innovative solutions
             </p>
             <div className='w-full mx-auto flex flex-row space-x-2 justify-center items-center'>
-                <Button variant="primary">
-                    <a
-                        href="#contact"
-                    >
-                        Hire me
-                    </a>
+                <Button 
+                    variant="primary"
+                    onClick={() => window.scrollTo({ top: document.getElementById("footer")?.offsetTop, behavior: "smooth" })}
+                >
+                        Contacts
                 </Button>
                 <Button variant="outline">
                     <a
