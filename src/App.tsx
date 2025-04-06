@@ -6,7 +6,6 @@ import { useState } from "react";
 import { LoadingScreen } from "./components/ui/LoadingScreen";
 import Projects from "./components/sections/Projects";
 import Footer from "./components/ui/Footer";
-import Contact from "./components/sections/Contact";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -26,8 +25,6 @@ function App() {
           <Technology />
           <hr className="bg-gray-900 opacity-20" />
           <Projects />
-          <hr className="bg-gray-900 opacity-20" />
-          <Contact />
           <Footer />
       </div>
     </>

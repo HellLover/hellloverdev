@@ -23,13 +23,15 @@ export const projects = [
         name: "Portfolio",
         description: "My personal portfolio website",
         tech: ["React", "Tailwind CSS", "TypeScript", "Vite"],
-        url: ""
+        url: "",
+        image: "https://i.imgur.com/UU3yA9X.png"
     },
     {
         name: "Dolphin Bot",
         description: "A versatile Discord bot with a sleek web dashboard that simplifies server management!",
         tech: ["React", "Next", "TypeScript", "discord.js", "ChakraUI"],
-        url: "https://dolphinbot.online"
+        url: "https://dolphinbot.online",
+        image: "https://i.imgur.com/Wz3OQJn.jpeg"
     }
 ]
 
