@@ -26,6 +26,11 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setShowToast(false); // hide toast when clicked
+  };
+
   return (
     <>
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}{" "}
@@ -42,7 +47,7 @@ function App() {
           <Projects />
           <Footer />
 
-          <Toast show={showToast} />
+          <Toast show={showToast} onClick={scrollToTop} />
       </div>
     </>
   )
